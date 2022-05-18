@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-tekniikat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/sass.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../jquery/jquery-ui.css">
+    <link rel="stylesheet" href="../jquery/jquery-ui.structure.css">
+    <link rel="stylesheet" href="../jquery/jquery-ui.theme.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark" style="background-color:rgb(40, 40, 40);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../images/BikeServiceLogoDark.png" alt="" width="60" height="60" class="d-inline-block align-text-center"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars"></i>
+              <span>TUOTTEET</span>
+            </button>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Hae..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <button type="button" class="btn btn-dark" id="basketBtn"><i class="fa-solid fa-basket-shopping"></i>
+              <span>OSTOSKORI</span>
+            </button>
+            <button type="button" class="btn btn-dark" id="signInBtn"><i class="fa-solid fa-user"></i>
+              <span>KIRJAUDU SISÄÄN</span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Polkupyörät
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Kaupunkipyörät</a></li>
+                  <li><a class="dropdown-item" href="#">Lasten polkupyörät</a></li>
+                  <li><a class="dropdown-item" href="#">Hybridipyörät</a></li>
+                  <li><a class="dropdown-item" href="#">Sähköpyörät</a></li>
+                  <li><a class="dropdown-item" href="#">Maastopyörät</a></li>
+                  <li><a class="dropdown-item" href="maantie.html">Maantiepyörät</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Vaatteet ja varusteet
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Pyöräilyvaatteet</a></li>
+                  <li><a class="dropdown-item" href="#">Ajovarusteet</a></li>
+                  <li><a class="dropdown-item" href="#">Lisätarvikkeet</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Huolto ja varaosat
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Varaosat</a></li>
+                  <li><a class="dropdown-item" href="#">Huolto hinnasto</a></li>
+                  <li><a class="dropdown-item" href="booking.html">Ajanvaraus</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#footerSpy">Yhteystiedot</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <header>
+      <div>
+        <h1>BikeService</h1>
+        <h2>Pyöräliike</h2>
+      </div>
+    </header>
+    <h3>Maantiepyörät</h3>
+    <div class="accordion col-md-8 accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Road bikes
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">The term road bicycle is used to describe bicycles built for traveling at speed on paved roads. Some sources use the term to mean racing bicycle. Other sources specifically exclude racing bicycles from the definition, 
+            using the term to mean a bicycle of a similar style but built more for endurance and less the fast bursts of speed desired in a racing bicycle; as such, they usually have more gear combinations and fewer hi-tech racing features. Certain of these bicycles have been referred to as 'sportive' bicycles to distinguish them from racing bicycles.
+            Compared to other styles of bicycle, road bicycles share common features:
+          <ul> 
+            <li> The tires are narrow, high-pressure (100 psi (700 kPa) or higher), and smooth to decrease rolling resistance</li>
+            <li> The handlebars are bent ("dropped") to allow the rider position to be leaned forward and downward, which reduces the forward vertical cross sectional area and thus highly reduces the air resistance</li>
+            <li> They usually use derailleur gears; however, single-speed and fixed-gear varieties exist</li>
+            <li> They either use disc brakes or rim brakes (although there might be technical differences, for example road bike calliper brakes use shorter and wider pads than mountain bike cantilevers)</li>
+            <li> The bicycle is of a lightweight construction</li>
+          </ul>
+          </div>
+          <div class="img">
+            <img id="image1" src="../images/motion-blur-1281675_640.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Triathlon bikes
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Triathlon bicycles are a variant of road-racing bicycles, designed primarily to optimise aerodynamics. Since in most triathlons, cyclists do not draft as in many other forms of road racing, triathletes can gain a significant advantage by riding a bicycle which reduces wind resistance.
+            The most obvious features of a triathlon bicycle are the handlebars, commonly known as "aero-bars" (see below). In addition, many components of a triathlon bicycle are designed with an aerodynamic profile: frame tubes have an oval or teardrop (instead of circular) cross-section; handlebars may be flat instead of round; wheels may have fewer spokes, or even be carbon fiber tri-spokes or discs rather than conventional spoked wheels. 
+            Lastly, a number of "radical" bicycle frames that are illegal in road cycling are still legal in triathlon, so "nontraditional" frame designs are also common, including Zipp 2001, Softride, and Kestrel. Tri bikes generally have a very "aggressive" geometry, meaning steep (close to vertical) tube angles and a low stem and handlebars relative to the saddle. 
+            This position helps to improve aerodynamics by lowering the cyclist's torso and creating a smaller overall "drag profile". In addition, many triathletes feel cycling in this position helps preserve the muscles used in running by emphasising pedalling with non-running muscle groups. The concept of a tri specific bicycle was pioneered by Ralph Ray and Dan Empfield in the late 1980s. 
+            Tri bikes are generally very similar to time trial bicycles used in time trial races. In 1989, Empfield designed the Quintana Roo Superform, a triathlon specific bicycle "built from the aerobars back" which provided an aerodynamic advantage as well as more power when in the "aero" position. Empfield's bike had 650c wheels and an 80 degree seat angle which was unique to the period. 
+            Many professional triathletes were sceptical of the "steep" design at first but when Ray Browning rode it at Ironman New Zealand breaking the bike and overall course records and left the bike leg with a 30-minute lead over rival Scott Tinley, the concepts were here to stay.
+          </div>
+          <div class="img">
+              <img id="image1" src="../images/triathlon-1815682_640.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Gravel bikes
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">The bicycles that cyclists use in gravel races and gravel rides can vary widely (can also be mountain bikes, cyclo-cross bicycles or racing bicycles with wider tires, depending on the conditions).
+
+            However, since the 2010s, a dedicated type of bicycle is marketed as gravel bike to cover the new cycling discipline. Dedicated gravel group sets are available from three major vendors (Shimano, Sram and Campagnolo).
+            
+            Gravel bikes at first glance look very similar to road bikes with their lack of suspension and drop bars.
+            
+            Where gravel bikes differ from road bikes is that the bars are usually wider, geometry is adapted to be more comfortable riding offroad for long periods of time and modern gravel bikes will also feature a 1x drivetrain removing the front derailleur. 
+            Wheels are generally wider and forks and rear triangle will allow for much wider tyres to cope with the terrain and requirements of riding off-road.
+                        
+            The relaxed geometry of mountain bikes is the foundation of gravel bike frames but gravel bikes are lighter, faster and more responsive than a mountain bike. Gravel bikes also use characteristics of both cyclocross and road bikes for better comfort on long rides and the wheel clearance to accommodate rides done in torrential conditions.
+            
+            Still, gravel bikes vary, and the different models cover a range between road racing bicycles and mountain bikes.
+          </div>
+          <div class="img">
+            <img id="image1" src="../images/cyclist-5507219_640.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Cyclocross bikes
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            A cyclo-cross bike or cyclo-cross bicycle (abbreviated CX Bike or CXB) is a bicycle specifically designed for the rigors of a cyclo-cross race. Cyclo-cross bicycles roughly resemble the racing bicycles used in road racing. The major differences between the two are the frame geometry, 
+            and the wider clearances that cyclo-cross bikes have for their larger tires and mud and other debris that they accumulate. Frame materials are selected with an aim to produce a lightweight, yet stiff and responsive frame. Low weight is prized for ease of carrying while running. 
+            Cyclo-cross racers may lift or carry their bikes as many as 30 times in one 60 minute race, increasing the desire for a lightweight bicycle.
+            Cyclo-cross frames require clearance for slightly wider (generally 30–34 mm) tires and the debris and mud that is picked up by them. They are typically very simple, often eschewing bridges between the rear stays. Compact geometry frames with sloping top tubes are less common than on road bicycles due to the need to carry the bicycle easily on the shoulder. 
+            Top tube (rather than bottom bracket) routed derailleur cables help combat the build-up of mud. Some specialist cyclo-cross bikes also have a higher bottom bracket to aid clearance over rough ground; extra clearance could prevent toe clips from dragging while re-mounting after an obstacle. 
+            This is less common as clipless pedals have become the norm for cyclo-cross. Typically, the frame geometry is somewhat more relaxed than that of a road bike, not as upright in the seat tube, which allows for more stability in soft ground. 
+            Also, the wheelbase can be a bit longer, which provides a more planted feeling when using aft body weighting over rough terrain, and can help keep the rider's feet from contacting the front wheel during a tight turn.
+          </div>
+          <div class="img">
+              <img id="image1" src="../images/sport-1688391_640.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer id="footerSpy">
+    <div class="container">
+      <div>
+        <img src="../images/BikeServiceLogoDark.png" alt="">
+      </div>
+      <div>
+        <ul>
+          <h4>BikeService pyöräliike</h4>
+          <li><i class="fa-solid fa-location-dot"></i> <span>Puustellinraitti 2</span></li>
+          <li>04300 Tuusula</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h4>Seuraa meitä</h4>
+          <li><i class="fa-brands fa-facebook-square"></i> <span>Facebook</span></li>
+          <li><i class="fa-brands fa-instagram-square"></i> <span>Instagram</span></li>
+          <li><i class="fa-brands fa-strava"></i> <span>Strava</span></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <h4>Yhteystiedot</h4>
+          <li><i class="fa-solid fa-square-phone-flip"></i> <span>+358458888888</span></li>
+          <li><i class="fa-solid fa-envelope"></i> <span>bikeservice@gmail.com</span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/jquery.js"></script>
+  <script src="../jquery/jquery-ui.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="https://kit.fontawesome.com/0d05d2dbfa.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
